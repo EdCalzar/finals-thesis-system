@@ -1,13 +1,16 @@
-import './App.css';
-import { Navbar } from './components/Navbar';
+import './App.css'; // Import the main CSS file for styling
+import { Navbar } from './components/Navbar'; // Import the Navbar component
 
+// MainPage component acts as a layout wrapper for other pages
 function MainPage({ children }) {
     return (
         <div className='MainPage'>
+            {/* Display the navigation bar at the top */}
             <Navbar />
-            {children}
+            {/* Render any child components or pages inside MainPage */}
+            {children} {/*Home, Story, Safety_map from App.jsx*/}
         </div>
     );
 }
 
-export default MainPage;
+export default MainPage; // Export MainPage so it can be used in other files
